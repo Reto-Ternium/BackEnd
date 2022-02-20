@@ -8,3 +8,4 @@ Backend (API) para la comunciación entre base de datos, FrontEnd y Mapa de Calo
 - Daniel Loredo Meléndez
 - Jose Andres Ordieres
 - Jorge Valdivia Padron
+- Gerardo Manzur Morales
