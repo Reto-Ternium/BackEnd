@@ -5,3 +5,4 @@ Backend (API) para la comunciación entre base de datos, FrontEnd y Mapa de Calo
 ### Equipo 1
 
 - Jorge Loredo Meléndez
+- Daniel Loredo Meléndez
