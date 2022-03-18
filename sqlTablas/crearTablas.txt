@@ -1,0 +1,33 @@
+CREATE TABLE trabajadores (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Nombre VARCHAR(256), 
+    Puesto VARCHAR(256),
+    Area_ID INT,
+    Sensor_ID INT NOT NULL,
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE sensores (
+    ID INT NOT NULL AUTO_INCREMENT,
+    F_Activacion TIMESTAMP,
+    Trabajador_ID INT NOT NULL,
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE areas (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Nombre VARCHAR(256), 
+    Latitud FLOAT NOT NULL,
+    Longitud FLOAT NOT NULL,
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE registros (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Con_gas INT NOT NULL,
+    F_Emision TIMESTAMP,
+    Latitud FLOAT NOT NULL,
+    Longitud FLOAT NOT NULL,
+    Sensor_ID INT NOT NULL,
+    PRIMARY KEY (ID)
+);
