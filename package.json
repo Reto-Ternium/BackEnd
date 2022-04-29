@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "addWorker": "node ./scripts/addWorker.js",
-    "generateRecord": "node ./scripts/generateRecord.js"
+    "randomRecord": "node ./scripts/generateRecord.js",
+    "breakoutSimulation": "node ./scripts/breakoutSimulation.js"
   },
   "repository": {
     "type": "git",

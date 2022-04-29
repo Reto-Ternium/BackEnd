@@ -14,11 +14,11 @@ con.connect(function (err) {
   setInterval(function () {
     // Real Lat max value = 25.728408037838058
     // Real Lat min value = 25.715301799102125
-    const rndLat = Math.random() * (728408037 - 715301799) + 715301799;
+    let rndLat = Math.random() * (728408037 - 715301799) + 715301799;
 
     // Real Long max value = 100.30783537957136
     // Real Long min value = 100.293713230266218
-    const rndLong = Math.random() * (307835379 - 293713230) + 293713230;
+    let rndLong = Math.random() * (307835379 - 293713230) + 293713230;
 
     const rndCon = Math.floor(Math.random() * 300);
     const rndDisp = Math.floor(Math.random() * 3) + 1;
@@ -28,5 +28,5 @@ con.connect(function (err) {
       if (err) throw err;
       console.log("worker inserted");
     });
-  }, 1000);
+  }, 100);
 });
