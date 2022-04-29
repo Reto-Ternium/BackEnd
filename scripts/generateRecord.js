@@ -11,6 +11,11 @@ con.connect(function (err) {
   if (err) throw err;
   console.log("Connected!");
 
+  con.query("DELETE FROM registros", function (err, result) {
+    if (err) throw err;
+    // console.log("Datatable new");
+  });
+
   setInterval(function () {
     // Real Lat max value = 25.728408037838058
     // Real Lat min value = 25.715301799102125

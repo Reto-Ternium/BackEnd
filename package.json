@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "addWorker": "node ./scripts/addWorker.js",
-    "randomRecord": "node ./scripts/generateRecord.js",
+    "generateRecord": "node ./scripts/generateRecord.js",
     "breakoutSimulation": "node ./scripts/breakoutSimulation.js"
   },
   "repository": {
